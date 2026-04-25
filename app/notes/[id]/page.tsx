@@ -7,8 +7,22 @@ type Props = {
 const NoteDetails = async ({ params }: Props) => {
   const { id } = await params;
   const note = await getSingleNote(id);
-  console.log(note);
-  return <div>NoteDetails</div>;
+  const formattedDate = note.updatedAt
+    ? `Updated at: ${note.updatedAt}`
+    : `Created at: ${note.createdAt}`;
+
+  if (!note) {
+    return <p>Нотатку не знайдено</p>;
+  }
+
+  return (
+    <div>
+      <h2>{note.title}</h2>
+      <p>{note.content}</p>
+      <button>Edit</button>
+      <p>{formattedDate}</p>
+    </div>
+  );
 };
 
 export default NoteDetails;
