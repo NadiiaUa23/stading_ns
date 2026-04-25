@@ -1,5 +1,6 @@
 import { Note } from '@/lib/api';
 import NoteItem from '../NoteItem/NoteItem';
+import { style } from './Noteslist.css';
 
 type Props = {
   notes: Note[];
