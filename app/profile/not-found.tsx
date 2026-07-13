@@ -10,7 +10,7 @@ export default async function ProfilePage({
   const user = await getUser(params.id);
 
   if (!user) {
-    notFound(); // Показує /profile/not-found.tsx
+    notFound(); // Показує /profile/not-found.tsx потрібно явно викликати функцію notFound() у коді маршруту або layout цієї секції.
   }
 
   return <div>{user.name}</div>;

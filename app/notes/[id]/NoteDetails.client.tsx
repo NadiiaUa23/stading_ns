@@ -24,8 +24,11 @@ const NoteDetailsClient = () => {
     ? `Updated at: ${note.updatedAt}`
     : `Created at: ${note.createdAt}`;
 
+  const handleGoBack = () => {};
+
   return (
     <div>
+      <button onClick={handleGoBack}>Back</button>
       <h2>{note.title}</h2>
       <p>{note.content}</p>
       <p>{formattedDate}</p>

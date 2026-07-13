@@ -1,5 +1,5 @@
 // // app/not-found.tsx
-
+//це кастомна сторынка
 // import Link from 'next/link';
 
 // const NotFound = () => {
@@ -32,6 +32,7 @@ const NotFound = () => {
   return (
     <div>
       <h1>404 - Сторінку не знайдено</h1>
+
       <p>Вас буде перенаправлено на головну через кілька секунд…</p>
     </div>
   );
