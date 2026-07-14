@@ -1,19 +1,19 @@
+// // // app/not-found.tsx
+// //це кастомна сторынка
+// // import Link from 'next/link';
+
+// // const NotFound = () => {
+// //   return (
+// //     <div>
+// //       <h1>404 - Page Not Found</h1>
+// //       <p>Sorry, the page you&#39;re looking for doesn&#39;t exist.</p>
+// //       <Link href="/">home </Link>
+// //     </div>
+// //   );
+// // };
+
+// // export default NotFound;
 // // app/not-found.tsx
-//це кастомна сторынка
-// import Link from 'next/link';
-
-// const NotFound = () => {
-//   return (
-//     <div>
-//       <h1>404 - Page Not Found</h1>
-//       <p>Sorry, the page you&#39;re looking for doesn&#39;t exist.</p>
-//       <Link href="/">home </Link>
-//     </div>
-//   );
-// };
-
-// export default NotFound;
-// app/not-found.tsx
 
 'use client';
 
@@ -24,7 +24,7 @@ const NotFound = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Редірект через 3 секунди
+    // Редірект через 3 секунди, та історфя залишиться в історії браузера, щоб користувач міг натиснути "Назад"
     const timer = setTimeout(() => router.push('/'), 3000);
     return () => clearTimeout(timer);
   }, [router]);
