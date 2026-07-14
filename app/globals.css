@@ -50,3 +50,22 @@ a {
     color-scheme: dark;
   }
 }
+
+.notes-layout {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  align-items: flex-start;
+}
+
+.notes-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  padding-right: 24px;
+  border-right: 1px solid #999;
+}
+
+.notes-content {
+  flex: 1;
+  min-width: 0;
+}
