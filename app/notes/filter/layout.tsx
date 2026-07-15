@@ -2,7 +2,7 @@ type Props = {
   children: React.ReactNode;
   sidebar: React.ReactNode;
 };
-
+//test
 const NotesLayout = ({ children, sidebar }: Props) => {
   return (
     <section className="notes-layout">
